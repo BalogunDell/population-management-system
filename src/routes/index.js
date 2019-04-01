@@ -34,5 +34,10 @@ router.route(
    .put(updateLocation)
    .delete(deleteLocation);
 
+router.route('*')
+  .get((req, res) => customResponseObject(res, 'Invalid route', statusCodes.notFound, null))
+  .post((req, res) => customResponseObject(res, 'Invalid route', statusCodes.notFound, null))
+  .put((req, res) => customResponseObject(res, 'Invalid route', statusCodes.notFound, null))
+  .delete((req, res) => customResponseObject(res, 'Invalid route', statusCodes.notFound, null));
 
 export default router;

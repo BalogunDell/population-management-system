@@ -9,7 +9,6 @@ export const getTotalResidents = (maleResidents, femaleResidents) => {
 };
 
 export const errorHandler = (res, error) => {
-  console.log(error, 'error');
   if (error && error.code === mongoDuplicateKeyCode) {
     return customResponseObject(res, duplicateError, statusCodes.duplicate);
   }
