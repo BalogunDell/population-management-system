@@ -17,7 +17,7 @@ Population Management System
 3.  Install all dependencies `npm install`
 4.  Start the app `npm run start`
 5.  Navigate to `localhost:3000` on postman to test the endpoints
-6.  Run server test with `npm runtest`
+6.  Run test with `npm run test`
 
 ## Endpoints
 * Documentation [here](https://documenter.getpostman.com/view/2508911/S17wQ7Pf)
